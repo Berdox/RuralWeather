@@ -114,5 +114,81 @@
 }
 
 
+@media (max-width: 600px) {
+    .hourly_icon {
+    }
+
+    .hourly_time {
+        font-size: 16px;
+    }
+
+    .hourly_condition {
+        font-size: 16px;
+        padding-right: 0.5rem;
+    }
+
+    .hourly_temp {
+        white-space: nowrap;
+        font-size: 14px;
+        padding-right: 0.5rem;
+    }
+
+    .rain_drop_icon {
+        padding-right: 0.25rem;
+        height: 60px;
+        width: 20px;
+    }
+
+    .hourly_rain {
+        white-space: nowrap;
+        font-size: 14px;
+        padding-right: 0.5rem;
+    }
+
+    .hourly_pressure_title {
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        font-size: 16px;
+    }
+
+    .hourly_clouds_title {
+        padding-left: 0.5rem;
+        font-size: 16px;
+    }
+
+    .hourly_pressure {
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 16px;
+    }
+
+    .hourly_clouds {
+        padding-right: 0.5rem;
+        font-size: 16px;
+    }
+
+    .hourly_humidity_title {
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        font-size: 16px;
+    }
+
+    .hourly_wind_title {
+        padding-left: 0.5rem;
+        font-size: 16px;
+    }
+
+    .hourly_humidity {
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 16px;
+    }
+
+    .hourly_wind {
+        padding-right: 0.5rem;
+        font-size: 16px;
+    }
+}
+
 
 
