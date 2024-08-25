@@ -1,0 +1,45 @@
+html {
+  font-size: 10px;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: #5ab1ba;
+    color: black;
+}
+
+.main_container {
+    width: 100%;
+}
+
+.main_hourly_container {
+    width: 100%;
+}
+
+.hours_button {
+    background-color: #9dd5dab3;
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem 1rem 0 0;
+    border-width: 0px;
+    color: snow;
+}
+
+footer {
+    margin-top: 2rem;
+    border: 0px;
+}
+/*
+
+@media (max-width: 600px) {
+    .currentWeather {
+        width: 100%;
+    }
+}*/

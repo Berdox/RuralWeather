@@ -1,0 +1,22 @@
+﻿
+@model WeatherData
+
+<div class="d-flex flex-column align-content-center justify-content-center current_weather_card">
+    <div class="d-flex flex-column align-items-center justify-items-center location_container">
+        <h3 class="text-center city"> @Model.Location.name </h3>
+        <h3 class="text-center country"> @Model.Location.country </h3>
+    </div>
+    <div class="d-flex align-content-center justify-content-center icon_container">
+        <img src=@Model.Current.condition.icon alt="Weather Image">
+        <!--<object type="image/svg+xml" data=".\resources\weatherIcons\clear.svg" class="mx-auto d-block current_weather_icon">
+            Your browser does not support SVG.
+        </object>-->
+    </div>
+    <div class="d-flex flex-column align-items-center justify-items-center temp_container">
+        <h2 class="current_temp">@Model.Current.temp_c °C</h2>
+        <div class="d-flex align-items-between justify-items-between">
+            <h4 class="current_high">High: @Model.forecast.forecastday[0].day.maxtemp_c °C</h4>
+            <h4 class="current_high">Low: @Model.forecast.forecastday[0].day.mintemp_c °C</h4>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+﻿.hourly_container {
+    width: 100%;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.hidden-hours {
+    display: none;
+}
+
+.weather_condition_container {
+    cursor: pointer;
+    width: 100%;
+    background-color: #a3d2d8;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    font-size: 16px;
+}
+
+.time_icon_container {
+    width: 50%;
+}
+
+.hourly_icon {
+
+}
+
+.hourly_time {
+
+}
+
+.hourly_condition {
+    padding-right: 1rem;
+}
+
+.hourly_temp {
+    padding-right: 1rem;
+}
+
+.rain_drop_icon {
+    padding-right: 1rem;
+    height: 50%;
+    width: 10%;
+}
+
+.hourly_rain {
+    padding-right: 1rem;
+}
+
+.condition_tenp_container {
+    width: 50%;
+}
+
+.air_data_container {
+    display: none;
+    width: 98%;
+    background-color: #9dd5dab3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    font-size: 16px;
+}
+
+.pressure_clouds_container {
+    width: 50%;
+    font-size: 16px;
+}
+
+.hourly_pressure_title {
+    padding-left: 1rem;
+    font-size: 16px;
+}
+
+.hourly_clouds_title {
+    padding-left: 1rem;
+}
+
+.hourly_pressure {
+    padding-right: 1rem;
+}
+
+.hourly_clouds {
+    padding-right: 1rem;
+}
+
+.humidity_wind_container {
+    width: 50%;
+}
+
+.hourly_humidity_title {
+    padding-left: 1rem;
+}
+
+.hourly_wind_title {
+    padding-left: 1rem;
+}
+
+.hourly_humidity {
+    padding-right: 1rem;
+}
+
+.hourly_wind {
+    padding-right: 1rem;
+}
+
+
+
+

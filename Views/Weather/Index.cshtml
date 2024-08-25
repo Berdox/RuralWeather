@@ -1,0 +1,39 @@
+﻿
+
+@model WeatherData
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="~/css/currentWeather.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hourlyWeather.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="d-flex flex-column align-items-center justify-items-center main_container">
+        @await Html.PartialAsync("_CurrentWeatherCard", Model)
+
+        <!--@await Html.PartialAsync("_WeatherAirData", Model)-->
+
+        <div class="d-flex justify-content-end align-content-end">
+            <button id="hoursButton" class="hours_button" onclick="toggleHours()">Full 24 Hours</button>
+        </div>
+
+        <div class="d-flex flex-column flex-wrap justify-content-center main_hourly_container">
+            @foreach (var forecast in Model.forecast.forecastday) {
+                @for (int i = 0; i < forecast.hour.Count; i++) {
+                    var hours = forecast.hour[i];
+                    var cssClass = i >= 4 ? "hidden-hours" : "";
+                    var uniqueID = $"air_data_{i}";
+                    var viewData = new ViewDataDictionary(ViewData) { { "UniqueID", uniqueID } };
+                    <div class="hourly_container @cssClass">
+                        @await Html.PartialAsync("_HourlyWeatherCard", hours, viewData)
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    
+</body>
+</html>

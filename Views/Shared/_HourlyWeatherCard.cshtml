@@ -1,0 +1,43 @@
+﻿@model Hour
+
+@{
+    var uniqueID = ViewData["UniqueID"] as string;
+    DateTime date = DateTime.Parse(@Model.time);
+}
+
+<div class="d-flex flex-column align-items-center justify-items-center hourly_container">
+    <div class="d-flex align-content-start justify-content-start weather_condition_container" onclick="toggleAirData('@uniqueID')">
+        <div class="d-flex flex-row align-items-center justify-content-start time_icon_container">
+            <img class="hourly_icon" src=@Model.condition.icon alt="weather Image">
+            <h2 class="hourly_time"> @date.ToString("hh:mm tt")</h2>
+        </div>
+        <div class="d-flex flex-row align-items-center justify-content-end condition_tenp_container">
+            <h2 class="hourly_condition"> @Model.condition.text</h2>
+            <h2 class="hourly_temp"> @Model.temp_c °C </h2>
+            <img class="rain_drop_icon" src="./resources/raindrop-drop.svg" alt="rain drop icon" />
+            <h2 class="hourly_rain"> @Model.chance_of_rain %</h2>
+        </div>
+    </div>
+    <div id="@uniqueID" class="align-content-center justify-content-center air_data_container">
+        <div class="d-flex flex-row align-content-center justify-content-center pressure_clouds_container">
+            <div class="d-flex flex-column align-content-start justify-content-start w-50">
+                <h2 class="hourly_pressure_title">Pressure: </h2>
+                <h2 class="hourly_clouds_title">Clouds: </h2>
+            </div>
+            <div class="d-flex flex-column align-items-end justify-items-end w-50">
+                <h2 class="hourly_pressure">@Model.pressure_mb mb</h2>
+                <h2 class="hourly_clouds"> @Model.cloud %</h2>
+            </div>
+        </div>
+        <div class="d-flex align-content-center justify-content-center humidity_wind_container">
+            <div class="d-flex flex-column align-content-begin justify-content-begin w-50">
+                <h2 class="hourly_humidity_title">Humidity: </h2>
+                <h2 class="hourly_wind_title">Wind: </h2>
+            </div>
+            <div class="d-flex flex-column align-items-end justify-items-end w-50">
+                <h2 class="hourly_humidity"> @Model.humidity %</h2>
+                <h2 class="hourly_wind"> @Model.wind_kph KPH</h2>
+            </div>
+        </div>
+    </div>
+</div>

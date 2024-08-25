@@ -1,0 +1,19 @@
+﻿
+.header_bar {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* *Round edges and add shadow */
+}
+
+.search_bar {
+    width: 35%;
+    border-radius: 5rem;
+    border-width: 0.25rem;
+    border-color: #a3d2d8;
+    text-align: center;
+}
+
+.search_bar::placeholder {
+    text-align: center;
+}
