@@ -57,7 +57,7 @@
     background-color: #9dd5dab3;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .pressure_clouds_container {
@@ -66,20 +66,25 @@
 }
 
 .hourly_pressure_title {
+    padding-top: 0.5rem;
     padding-left: 1rem;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .hourly_clouds_title {
     padding-left: 1rem;
+    font-size: 22px;
 }
 
 .hourly_pressure {
+    padding-top: 0.5rem;
     padding-right: 1rem;
+    font-size: 22px;
 }
 
 .hourly_clouds {
     padding-right: 1rem;
+    font-size: 22px;
 }
 
 .humidity_wind_container {
@@ -87,19 +92,25 @@
 }
 
 .hourly_humidity_title {
+    padding-top: 0.5rem;
     padding-left: 1rem;
+    font-size: 22px;
 }
 
 .hourly_wind_title {
     padding-left: 1rem;
+    font-size: 22px;
 }
 
 .hourly_humidity {
+    padding-top: 0.5rem;
     padding-right: 1rem;
+    font-size: 22px;
 }
 
 .hourly_wind {
     padding-right: 1rem;
+    font-size: 22px;
 }
 
 
